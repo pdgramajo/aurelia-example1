@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES7",
     "module": "amd",
     "experimentalDecorators": true
   }

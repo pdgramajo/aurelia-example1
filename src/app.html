@@ -10,10 +10,8 @@
 		  	<td>UserName</td>
 		</tr>
     </thead>
-    <tbody> 
-      <tr repeat.for="person of mydata ">				
-					<custom-component data.bind="person"></custom-component>
-		</tr>
+    <tbody> 	    
+		 <custom-component repeat.for="person of mydata " data.bind="person" containerless ></custom-component>
     </tbody>
 </table>
 
