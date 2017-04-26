@@ -6,7 +6,7 @@ export class App {
     
     this.message = 'Hello World!';
     let httpClient = new HttpClient();
-    let xx =  httpClient.fetch('fakedata.json')// httpClient.fetch('http://localhost:54445/api/People')
+    let xx =  httpClient.fetch('fakedata.json')// httpClient.fetch('http://localhost:54445/api/People') //
 	            .then(response => response.json())
               .then(data => {    
                 console.log('data => ',data);

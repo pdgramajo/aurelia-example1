@@ -181,6 +181,6 @@ define('resources/index',["exports"], function (exports) {
   function configure(config) {}
 });
 define('text!app.html', ['module'], function(module) { module.exports = "<template><h1>${message}</h1><require from=\"./components/customComponent\"></require><table id=\"table\" class=\"display\" cellspacing=\"0\" width=\"100%\"><thead><tr><td>Id</td><td>FirstName</td><td>LastName</td><td>UserName</td></tr></thead><tbody><custom-component repeat.for=\"person of mydata \" data.bind=\"person\" containerless></custom-component></tbody></table></template>"; });
-define('text!components/customComponent.html', ['module'], function(module) { module.exports = "<template><tr><td>${data.id}</td><td>${data.fieldName}</td><td>${data.dataType}</td><td>${data.dataLength}</td></tr></template>"; });
+define('text!components/customComponent.html', ['module'], function(module) { module.exports = "<template><tr><td>${data.Id}</td><td>${data.fieldName}</td><td>${data.dataType}</td><td>${data.dataLength}</td></tr></template>"; });
 define('text!components/login-component.html', ['module'], function(module) { module.exports = "<template><form action=\"\" method=\"POST\" class=\"form-horizontal\" role=\"form\"><input type=\"text\" name=\"user\" placeholder=\"Username\"> <input type=\"password\" name=\"pass\" placeholder=\"Password\"> <input type=\"submit\" name=\"login\" class=\"login loginmodal-submit\" value=\"Login\"></form></template>"; });
 //# sourceMappingURL=app-bundle.js.map
